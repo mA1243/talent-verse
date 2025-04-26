@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-700 hover:text-talent-purple transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-700 hover:text-talent-purple transition-colors">How It Works</a>
-            <a href="#talents" className="text-gray-700 hover:text-talent-purple transition-colors">Talents</a>
+            <Link to="/explore" className="text-gray-700 hover:text-talent-purple transition-colors">Explore</Link>
             <div className="flex space-x-3">
               <Button variant="outline" onClick={() => navigate("/login")}>Log In</Button>
               <Button className="bg-talent-purple hover:bg-talent-purple-dark text-white" onClick={() => navigate("/register")}>Sign Up</Button>
@@ -55,9 +56,9 @@ const Navbar = () => {
             <a href="#how-it-works" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-talent-purple hover:bg-gray-100">
               How It Works
             </a>
-            <a href="#talents" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-talent-purple hover:bg-gray-100">
-              Talents
-            </a>
+            <Link to="/explore" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-talent-purple hover:bg-gray-100">
+              Explore
+            </Link>
             <div className="mt-4 flex flex-col space-y-2 px-3">
               <Button variant="outline" className="w-full justify-center" onClick={() => navigate("/login")}>Log In</Button>
               <Button className="w-full justify-center bg-talent-purple hover:bg-talent-purple-dark text-white" onClick={() => navigate("/register")}>Sign Up</Button>
