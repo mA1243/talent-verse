@@ -17,18 +17,17 @@ const Navbar = () => {
             </div>
           </div>
           
-          {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#features" className="text-gray-700 hover:text-talent-purple transition-colors">Features</a>
             <a href="#how-it-works" className="text-gray-700 hover:text-talent-purple transition-colors">How It Works</a>
             <Link to="/explore" className="text-gray-700 hover:text-talent-purple transition-colors">Explore</Link>
+            <Link to="/profile" className="text-gray-700 hover:text-talent-purple transition-colors">Profile</Link>
             <div className="flex space-x-3">
               <Button variant="outline" onClick={() => navigate("/login")}>Log In</Button>
               <Button className="bg-talent-purple hover:bg-talent-purple-dark text-white" onClick={() => navigate("/register")}>Sign Up</Button>
             </div>
           </div>
           
-          {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -46,7 +45,6 @@ const Navbar = () => {
         </div>
       </div>
       
-      {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white pb-3 pt-2">
           <div className="px-4 pt-2 pb-3 space-y-1 sm:px-3">
@@ -58,6 +56,9 @@ const Navbar = () => {
             </a>
             <Link to="/explore" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-talent-purple hover:bg-gray-100">
               Explore
+            </Link>
+            <Link to="/profile" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-talent-purple hover:bg-gray-100">
+              Profile
             </Link>
             <div className="mt-4 flex flex-col space-y-2 px-3">
               <Button variant="outline" className="w-full justify-center" onClick={() => navigate("/login")}>Log In</Button>
