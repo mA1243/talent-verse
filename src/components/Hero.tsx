@@ -15,15 +15,15 @@ const Hero = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="cta-button">Get Started</Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-talent-purple-dark transition-colors">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-talent-purple transition-colors">
                 Explore Talents
               </Button>
             </div>
           </div>
           <div className="w-full md:w-1/2 animate-fade-in" style={{ animationDelay: "0.2s" }}>
             <div className="relative">
-              <div className="absolute -top-6 -left-6 w-64 h-64 bg-talent-purple rounded-full opacity-20 animate-float"></div>
-              <div className="absolute -bottom-8 -right-8 w-72 h-72 bg-talent-purple-light rounded-full opacity-20 animate-float" style={{ animationDelay: "1.5s" }}></div>
+              <div className="absolute -top-6 -left-6 w-64 h-64 bg-talent-blue rounded-full opacity-20 animate-float"></div>
+              <div className="absolute -bottom-8 -right-8 w-72 h-72 bg-talent-green rounded-full opacity-20 animate-float" style={{ animationDelay: "1.5s" }}></div>
               <img 
                 src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
                 alt="Talents collaborating" 

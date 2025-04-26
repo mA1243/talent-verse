@@ -100,11 +100,11 @@
 
 @layer components {
   .hero-gradient {
-    @apply bg-gradient-to-br from-talent-purple-dark via-talent-purple to-talent-purple-light;
+    @apply bg-gradient-to-br from-talent-purple via-talent-purple-dark to-purple-900;
   }
   
   .cta-button {
-    @apply bg-talent-purple-button text-talent-button-text hover:bg-talent-purple-dark transition-all duration-200 font-semibold px-6 py-3 rounded-md;
+    @apply bg-white text-talent-purple hover:bg-opacity-90 transition-all duration-200 font-semibold px-6 py-3 rounded-md;
   }
   
   .section-container {
