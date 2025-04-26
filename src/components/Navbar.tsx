@@ -1,9 +1,10 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
@@ -21,8 +22,8 @@ const Navbar = () => {
             <a href="#how-it-works" className="text-gray-700 hover:text-talent-purple transition-colors">How It Works</a>
             <a href="#talents" className="text-gray-700 hover:text-talent-purple transition-colors">Talents</a>
             <div className="flex space-x-3">
-              <Button variant="outline">Log In</Button>
-              <Button className="bg-talent-purple hover:bg-talent-purple-dark text-white">Sign Up</Button>
+              <Button variant="outline" onClick={() => navigate("/login")}>Log In</Button>
+              <Button className="bg-talent-purple hover:bg-talent-purple-dark text-white" onClick={() => navigate("/register")}>Sign Up</Button>
             </div>
           </div>
           
@@ -58,8 +59,8 @@ const Navbar = () => {
               Talents
             </a>
             <div className="mt-4 flex flex-col space-y-2 px-3">
-              <Button variant="outline" className="w-full justify-center">Log In</Button>
-              <Button className="w-full justify-center bg-talent-purple hover:bg-talent-purple-dark text-white">Sign Up</Button>
+              <Button variant="outline" className="w-full justify-center" onClick={() => navigate("/login")}>Log In</Button>
+              <Button className="w-full justify-center bg-talent-purple hover:bg-talent-purple-dark text-white" onClick={() => navigate("/register")}>Sign Up</Button>
             </div>
           </div>
         </div>
