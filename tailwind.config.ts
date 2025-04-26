@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -68,6 +69,7 @@ export default {
 					'purple-dark': '#7C3AED',
 					'purple-background': '#1A1F2C',
 					'button-text': '#FFFFFF',
+					'purple-button': '#8B5CF6',
 					'button-background': '#8B5CF6',
 					'button-hover': '#6D28D9'
 				}
