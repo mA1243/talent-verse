@@ -1,73 +1,63 @@
-# Welcome to your Lovable project
+This is a talent-sharing platform that allows users to showcase their skills, connect with others, and explore opportunities.
 
-## Project info
+Features
+1. User Authentication
+Register/Login: Users can sign up and log in using their email via Supabase Auth.
 
-**URL**: https://lovable.dev/projects/f7cab2b3-b7cc-4cee-a837-dab833a2b166
+Authentication Flow: Secure, easy-to-use login and sign-up process with email verification.
 
-## How can I edit this code?
+2. Profile Management
+Create/Edit Profile: Users can create or update their profile with:
 
-There are several ways of editing your application.
+Name
 
-**Use Lovable**
+Location
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f7cab2b3-b7cc-4cee-a837-dab833a2b166) and start prompting.
+Bio
 
-Changes made via Lovable will be committed automatically to this repo.
+Profile photo (uploaded via Supabase Storage)
 
-**Use your preferred IDE**
+Profile Viewing: Users can view other profiles by clicking on their skill posts.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+3. Skill Posts
+Create/Edit/Delete Posts: Users can create, edit, and delete skill posts that include:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Title
 
-Follow these steps:
+Description
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Image (uploaded to Supabase Storage)
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Category (e.g., Programming, Design, Marketing)
 
-# Step 3: Install the necessary dependencies.
-npm i
+Explore Feed: Display a feed with skill posts from all users in the platform, sorted by date or category.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. Responsive UI
+Tailwind CSS: Clean, responsive design that adapts to different screen sizes and provides a smooth user experience across devices.
 
-**Edit a file directly in GitHub**
+Tech Stack
+Frontend:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+React: Used for building the interactive user interface.
 
-**Use GitHub Codespaces**
+TypeScript: Provides type safety for better development and maintainability.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Vite: Fast and modern build tool for fast development and optimal production builds.
 
-## What technologies are used for this project?
+Tailwind CSS: Utility-first CSS framework for fast and flexible styling.
 
-This project is built with:
+Backend:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Supabase: Provides a backend-as-a-service with:
 
-## How can I deploy this project?
+Authentication (email/password login)
 
-Simply open [Lovable](https://lovable.dev/projects/f7cab2b3-b7cc-4cee-a837-dab833a2b166) and click on Share -> Publish.
+PostgreSQL (for database management of user profiles and skill posts)
 
-## Can I connect a custom domain to my Lovable project?
+Storage (for profile and skill post images)
 
-Yes, you can!
+AI Tools:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+GitHub Copilot: Assisted with code completion and suggestions.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Lovable: Used for generating UI design.

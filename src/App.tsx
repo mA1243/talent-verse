@@ -10,7 +10,8 @@ import ExploreTalents from "./pages/ExploreTalents";
 import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import EditProfile from "./pages/EditProfile";
-import PostEditor from "./pages/PostEditor";
+import PostCreate from "./pages/PostCreate";
+import PostEdit from "./pages/PostEdit";
 
 const queryClient = new QueryClient();
 
@@ -25,10 +26,10 @@ const App = () => (
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/explore" element={<ExploreTalents />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile/:userId" element={<Profile />} />
           <Route path="/profile/edit" element={<EditProfile />} />
-          <Route path="/posts/create" element={<PostEditor />} />
-          <Route path="/posts/edit/:id" element={<PostEditor />} />
+          <Route path="/posts/create" element={<PostCreate />} />
+          <Route path="/posts/edit/:id" element={<PostEdit />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

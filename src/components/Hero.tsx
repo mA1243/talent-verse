@@ -1,7 +1,9 @@
 
 import { Button } from "@/components/ui/button";
+import { useNavigate} from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div className="hero-gradient pt-24 pb-12 md:pt-32 md:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,8 +16,8 @@ const Hero = () => {
               Showcase your skills, connect with like-minded people, and build your portfolio on the platform made for talent sharing.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="cta-button">Get Started</Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-talent-purple transition-colors">
+              <Button size="lg" className="cta-button hover:text-black">Get Started</Button>
+              <Button onClick={() => navigate("/explore")} size="lg" variant="outline" className="border-white text-black hover:bg-white hover:text-talent-purple transition-colors">
                 Explore Talents
               </Button>
             </div>
